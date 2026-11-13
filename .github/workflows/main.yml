@@ -1,0 +1,14 @@
+name: My First Action
+
+# کی اجرا بشه؟
+on:
+  push:
+    branches: [ "main" ]
+
+# چه کارهایی انجام بده؟
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest # روی یک کامپیوتر لینوکسی مجازی اجرا شو
+    steps:
+      - name: Print a message
+        run: echo "Hello World! GitHub Actions is working!"
